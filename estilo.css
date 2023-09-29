@@ -1,0 +1,145 @@
+html{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: auto;
+    
+}
+
+body{
+    margin: 0;
+}
+.header{
+    text-align: center;
+    margin: auto;
+    background-color: #150101;
+}
+
+#hamburguer{
+    background-color: #ff9d09;
+    color: #390505;
+    display: block;
+    text-align: center;
+    padding: .3em;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.header_logo{
+    width: 5em;
+    height: auto;
+}
+
+.header_nav.show{
+    display: block;
+}
+
+.header_nav{
+    background-color: rgb(57, 0, 0);
+    display:none;
+}
+
+ul{
+    margin: 0;
+}
+
+.header_nav ul{
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: .8em;
+}
+
+.header_nav a{
+    color: #ff9d09;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
+
+.header_nav a:hover{
+    background-color: color-mix(in srgb, #ff9d09, #ffff 50%);
+    color: #390505;
+}
+
+@media screen and (min-width: 48em){
+
+    #hamburguer{
+        display: none;
+    }
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #390505;
+    }
+
+    .header_logo{
+        margin-left: 2em;
+    }
+
+    .header_nav{
+        display: block;
+    }
+
+    .header_nav ul{
+    
+        margin-right: 2em;
+        font-size: .9em;
+    }
+
+    .header_nav li{
+     
+        display:inline-block;
+    }
+
+    .header_nav a{
+        border-radius: 5em;
+    }
+
+    .header_nav a:hover{
+        background-color: color-mix(in srgb, #ff9d09, #ffff 50%);
+        color: #390505;
+    }
+}
+.fundo_main{
+    background-image: url(estilo/pexels-photo-6551792.webp);
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+footer{
+    background-color: #390505;
+    padding: 1em;
+    text-align: center;
+}
+
+.logofooter{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.tamanho{
+    width: 2.5em;
+}
+
+.textofooter{
+    font-size: 0.6em;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin:0;
+    padding-top: .8rem;
+    color: #ffff;
+}
+@media screen and (min-width: 48em){
+
+    .logofooter{
+        flex-direction: row;
+        justify-content: center;
+        gap:1.5em;
+    }
+
+}
